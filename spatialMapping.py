@@ -9,7 +9,6 @@ def main():
     # Create a InitParameters object and set configuration parameters
     init_params = sl.InitParameters()
     # Set configuration parameters
-    init_params = sl.InitParameters()
     init_params.set_from_svo_file("C:\\Users\\adada\\Downloads\\ZED2_HD2K_Runners_H264.svo")
     init_params.svo_real_time_mode = False  # Don't play in real time
     init_params.camera_resolution = sl.RESOLUTION.AUTO  # Use HD720 or HD1200 video mode (default fps: 60)
