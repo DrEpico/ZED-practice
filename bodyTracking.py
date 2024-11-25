@@ -49,7 +49,7 @@ def main():
     # For indoor scene or closer range, a higher confidence limits the risk of false positives and increase the precision (~50+)
     body_runtime_param.detection_confidence_threshold = 40
     i = 0
-    while i < 100:
+    while i < 500:
         if zed.grab() == sl.ERROR_CODE.SUCCESS:
             err = zed.retrieve_bodies(bodies, body_runtime_param)
             if bodies.is_new:
